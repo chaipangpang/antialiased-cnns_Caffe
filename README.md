@@ -201,7 +201,9 @@ message SubsampleParameter {
 }
 ```
 Add [subsample_layer.hpp](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/include/caffe/layers/subsample_layer.hpp), [subsample_layer.cpp](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/src/caffe/layers/subsample_layer.cpp) and [subsample_layer.cu](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/src/caffe/layers/subsample_layer.cu) to the specified folder.  
+
 * Add Deep Separable Convolution layer  
+
 Add deep separable convolution does not need to be declared in [caffe.proto](https://github.com/BVLC/caffe/blob/master/src/caffe/proto/caffe.proto)  
 
 

@@ -70,9 +70,9 @@ layer {
 * Conv(stride = 2)+ReLU
 ```
 layer {
-  bottom: "conv1_1"
-  top: "conv1_2"
-  name: "conv1_2"
+  bottom: "bottom"
+  top: "conv"
+  name: "conv"
   type: "Convolution"
   param {
     lr_mult: 1
@@ -98,15 +98,15 @@ layer {
   }
 }
 layer {
-  bottom: "conv1_2"
-  top: "conv1_2"
-  name: "relu1_2"
+  bottom: "conv"
+  top: "conv"
+  name: "relu"
   type: "ReLU"
 }
 layer {
-  bottom: "conv1_2"
-  top: "blurconv1"
-  name: "blurconv1"
+  bottom: "conv"
+  top: "blurconv"
+  name: "blurconv"
   type: "ConvolutionDepthwise"
   param {
     lr_mult: 0
@@ -125,9 +125,9 @@ layer {
   }
 }
 layer {
-  bottom: "blurconv1"
-  top: "subsample1"
-  name: "subsample1"
+  bottom: "blurconv"
+  top: "subsample"
+  name: "subsample"
   type: "Subsample"
   subsample_param {
     kernel_size: 2
@@ -138,9 +138,9 @@ layer {
 * AvePool(stride = 2)
 ```
 layer {
-  bottom: "conv1_2"
-  top: "blurconv1"
-  name: "blurconv1"
+  bottom: "bottom"
+  top: "blurconv"
+  name: "blurconv"
   type: "ConvolutionDepthwise"
   param {
     lr_mult: 0
@@ -159,9 +159,9 @@ layer {
   }
 }
 layer {
-  bottom: "blurconv1"
-  top: "subsample1"
-  name: "subsample1"
+  bottom: "blurconv"
+  top: "subsample"
+  name: "subsample"
   type: "Subsample"
   subsample_param {
     kernel_size: 2

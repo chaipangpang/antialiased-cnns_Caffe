@@ -1,3 +1,4 @@
 # antialiased-cnns_Caffe
-A Caffe Implementation for Antialiased CNNs  
+This repository contains a [Caffe](https://github.com/BVLC/caffe) implementation of the paper [Making Convolutional Networks Shift-Invariant Again](https://arxiv.org/pdf/1904.11486.pdf).   
 
+#Subsample  

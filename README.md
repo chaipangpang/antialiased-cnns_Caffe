@@ -204,6 +204,12 @@ Add [subsample_layer.hpp](https://github.com/chaipangpang/antialiased-cnns_Caffe
 
 * Add Deep Separable Convolution layer  
 
-Deep separable convolution does not need to be declared in [caffe.proto](https://github.com/BVLC/caffe/blob/master/src/caffe/proto/caffe.proto)   
-Add [conv_dw_layer.hpp](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/include/caffe/layers/subsample_layer.hpp), [conv_dw_layer.cpp](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/src/caffe/layers/subsample_layer.cpp) and [conv_dw_layer.cu](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/src/caffe/layers/subsample_layer.cu) to the specified folder.  
+Deep separable convolution does not need to be declared in [caffe.proto](https://github.com/BVLC/caffe/blob/master/src/caffe/proto/caffe.proto).   
+Add [conv_dw_layer.hpp](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/include/caffe/layers/subsample_layer.hpp), [conv_dw_layer.cpp](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/src/caffe/layers/subsample_layer.cpp) and [conv_dw_layer.cu](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/src/caffe/layers/subsample_layer.cu) to the specified folder.
+Deep Separable Convolution layer fork from [Caffe sp2823](https://github.com/BVLC/caffe/pull/5665/files).  
 
+### How to use  
+Reference in [vgg16_antialiase_train.prototxt](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/model_example/VGG16/vgg16_antialiase_train.prototxt).  
+
+## Reference
+* [antialiased-cnns](https://github.com/adobe/antialiased-cnns)

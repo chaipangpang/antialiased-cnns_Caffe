@@ -176,7 +176,7 @@ layer {
 [cudnn5.0](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/)    
 
 ### How to build  
-* Add subsample layer  
+* Add Subsample layer  
 Modify [caffe.proto](https://github.com/BVLC/caffe/blob/master/src/caffe/proto/caffe.proto) like this：  
 Add option in LayerParameter:
 ```
@@ -200,5 +200,8 @@ message SubsampleParameter {
   optional uint32 stride_w = 7; // The stride width
 }
 ```
-* Add subsample layer
+Add [subsample_layer.hpp](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/include/caffe/layers/subsample_layer.hpp), [subsample_layer.cpp](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/src/caffe/layers/subsample_layer.cpp) and [subsample_layer.cu](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/src/caffe/layers/subsample_layer.cu) to the specified folder.  
+* Add Deep Separable Convolution layer  
+Add deep separable convolution does not need to be declared in [caffe.proto](https://github.com/BVLC/caffe/blob/master/src/caffe/proto/caffe.proto)  
+
 

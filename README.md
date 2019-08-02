@@ -18,7 +18,7 @@ Forward:
 Backward:   
 <img src="https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/pics/backward.jpg" width="447" height="220" alt="backward"/>  
 ### Gaussian blur  
-Gaussian blur use [Deep Separable Convolution](https://arxiv.org/abs/1610.02357) whit gauss initialization, gaussian kernel obeys standard normal distribution N(0,1).  
+Gaussian blur use [Deep Separable Convolution](https://arxiv.org/abs/1610.02357) whit gauss initialization, gaussian kernel obeys standard normal distribution N(0,1), and let lr_mult = 0 ,decay_mult = 0.    
 
 ### Anti-aliasing common downsampling layers in caffe
 * MaxPool(stride = 2)
@@ -204,6 +204,6 @@ Add [subsample_layer.hpp](https://github.com/chaipangpang/antialiased-cnns_Caffe
 
 * Add Deep Separable Convolution layer  
 
-Add deep separable convolution does not need to be declared in [caffe.proto](https://github.com/BVLC/caffe/blob/master/src/caffe/proto/caffe.proto)  
-
+Deep separable convolution does not need to be declared in [caffe.proto](https://github.com/BVLC/caffe/blob/master/src/caffe/proto/caffe.proto)   
+Add [conv_dw_layer.hpp](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/include/caffe/layers/subsample_layer.hpp), [conv_dw_layer.cpp](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/src/caffe/layers/subsample_layer.cpp) and [conv_dw_layer.cu](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/subsample_layer/src/caffe/layers/subsample_layer.cu) to the specified folder.  
 

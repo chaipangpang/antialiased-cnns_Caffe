@@ -8,7 +8,7 @@ This repository contains a [Caffe](https://github.com/BVLC/caffe) implementation
 <img src="https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/pics/example%20on%20max-pooling.jpg" width="750" height="362" alt="example%20on%20max-pooling"/>  
 
 ### BlurPool
-BlurPool combine blur filter and subsample, then blur filter use gaussian blur in [antialiased-cnns](https://github.com/adobe/antialiased-cnns/blob/master/models_lpf/__init__.py)  
+BlurPool combine blur filter and subsample, then blur filter use gaussian blur in [antialiased-cnns](https://github.com/adobe/antialiased-cnns/blob/master/models_lpf/__init__.py).    
 
 ## Subsample  
 Provide [subsample layer](https://github.com/chaipangpang/antialiased-cnns_Caffe/tree/master/subsample_layer) to support antialiased-cnns.  

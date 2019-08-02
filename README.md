@@ -168,5 +168,13 @@ layer {
     stride: 2
   }
 }
-```
+```  
+## Usage  
+### Prerequisites
+[Caffe](https://github.com/BVLC/caffe)
+[CUDA8.0](https://developer.nvidia.com/cuda-toolkit)
+[cudnn5.0](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/)    
+
+### How to build  
+
 

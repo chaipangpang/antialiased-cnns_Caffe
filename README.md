@@ -176,5 +176,29 @@ layer {
 [cudnn5.0](https://docs.nvidia.com/deeplearning/sdk/cudnn-install/)    
 
 ### How to build  
-
+* Add subsample layer  
+Modify [caffe.proto](https://github.com/BVLC/caffe/blob/master/src/caffe/proto/caffe.proto) like this：  
+Add option in LayerParameter:
+```
+message LayerParameter {
+optional SubsampleParameter subsample_param = Your last ID;
+}
+```
+Add message at the end:
+```
+message SubsampleParameter {
+  // Pad, kernel size, and stride are all given as a single value for equal
+  // dimensions in height and width or as Y, X pairs.
+  optional uint32 pad = 3 [default = 0]; // The padding size (equal in Y, X)
+  optional uint32 pad_h = 8 [default = 0]; // The padding height
+  optional uint32 pad_w = 9 [default = 0]; // The padding width
+  optional uint32 kernel_size = 1; // The kernel size (square)
+  optional uint32 kernel_h = 4; // The kernel height
+  optional uint32 kernel_w = 5; // The kernel width
+  optional uint32 stride = 2 [default = 1]; // The stride (equal in Y, X)
+  optional uint32 stride_h = 6; // The stride height
+  optional uint32 stride_w = 7; // The stride width
+}
+```
+* Add subsample layer
 

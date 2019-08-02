@@ -10,9 +10,12 @@ This repository contains a [Caffe](https://github.com/BVLC/caffe) implementation
 ### BlurPool
 BlurPool combine blur filter and subsample, then blur filter use gaussian blur in [antialiased-cnns](https://github.com/adobe/antialiased-cnns/blob/master/models_lpf/__init__.py).    
 
-## Subsample  
+## Caffe implementation  
+### Subsample        
 Provide [subsample layer](https://github.com/chaipangpang/antialiased-cnns_Caffe/tree/master/subsample_layer) to support antialiased-cnns.  
 Forward:    
  <img src="https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/pics/forward.jpg" width="447" height="220" alt="forward"/>    
 Backward:   
 <img src="https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/pics/backward.jpg" width="447" height="220" alt="backward"/>  
+### Gaussian blur  
+Gaussian blur use deep separable convolution whit gauss initialization, then gaussian kernel with $u = 0$ and $\delta = 1$ standard normal distribution

@@ -209,7 +209,7 @@ Add [conv_dw_layer.hpp](https://github.com/chaipangpang/antialiased-cnns_Caffe/b
 Deep Separable Convolution layer fork from [Caffe sp2823](https://github.com/BVLC/caffe/pull/5665/files).  
 
 ### How to use  
-Reference in [vgg16_antialiase_train.prototxt](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/model_example/VGG16/vgg16_antialiase_train.prototxt).  
+Reference in [vgg16_antialiase_train.prototxt](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/model_example/VGG16/vgg16_antialiase_train.prototxt) and [Anti-aliasing common downsampling layers in caffe](https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/README.md#anti-aliasing-common-downsampling-layers-in-caffe).  
 
 ## Reference
 * [antialiased-cnns](https://github.com/adobe/antialiased-cnns)

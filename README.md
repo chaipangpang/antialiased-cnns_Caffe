@@ -169,6 +169,8 @@ layer {
   }
 }
 ```  
+note:let pad = (kernel_size-1)/2 in ConvolutionDepthwise layer.  
+
 ## Usage  
 ### Prerequisites
 [Caffe](https://github.com/BVLC/caffe)  

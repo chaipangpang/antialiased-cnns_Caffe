@@ -171,7 +171,7 @@ layer {
 ```  
 ### note  
 * let pad = (kernel_size-1)/2 in ConvolutionDepthwise layer.  
-* Blurpool should be after ReLU layer, even if there is batchnormal layer between convolution layer and ReLU layer.  
+* BlurPool should be after ReLU layer, even if there is batchnormal layer between convolution layer and ReLU layer.  
 
 ## Usage  
 ### Prerequisites

@@ -18,7 +18,7 @@ Forward:
 Backward:   
 <img src="https://github.com/chaipangpang/antialiased-cnns_Caffe/blob/master/pics/backward.jpg" width="447" height="220" alt="backward"/>  
 ### Gaussian blur  
-Gaussian blur use [Deep Separable Convolution](https://arxiv.org/abs/1610.02357) whit gauss initialization, gaussian kernel obeys standard normal distribution N(0,1), and let lr_mult = 0 ,decay_mult = 0.    
+Gaussian blur use [Deep Separable Convolution](https://arxiv.org/abs/1610.02357) whit gauss initialization, gaussian kernel obeys std=0.1, and let lr_mult = 0 ,decay_mult = 0，fixed gaussian kernel weight.    
 
 ### Anti-aliasing common downsampling layers in caffe
 * MaxPool(stride = 2)
@@ -52,7 +52,7 @@ layer {
     stride: 1
     weight_filler {
       type: "gaussian"
-      std: 1
+      std: 0.1
     }
   }
 }
@@ -120,7 +120,7 @@ layer {
     stride: 1
     weight_filler {
       type: "gaussian"
-      std: 1
+      std: 0.1
     }
   }
 }
@@ -154,7 +154,7 @@ layer {
     stride: 1
     weight_filler {
       type: "gaussian"
-      std: 1
+      std: 0.1
     }
   }
 }

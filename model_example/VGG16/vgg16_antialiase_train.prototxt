@@ -16,7 +16,7 @@ layer {
   }
   data_param {
     source: "./TrainData"
-    batch_size: 16
+    batch_size: 32
     backend: LMDB
   }
 }
@@ -37,7 +37,7 @@ layer {
   }
   data_param {
     source: "./ValData"
-    batch_size: 16
+    batch_size: 32
     backend: LMDB
   }
 }
@@ -139,7 +139,7 @@ layer {
     stride: 1
     weight_filler {
       type: "gaussian"
-      std: 1
+      std: 0.1
     }
   }
 }
@@ -255,7 +255,7 @@ layer {
     stride: 1
     weight_filler {
       type: "gaussian"
-      std: 1
+      std: 0.1
     }
   }
 }
@@ -402,7 +402,7 @@ layer {
     stride: 1
     weight_filler {
       type: "gaussian"
-      std: 1
+      std: 0.1
     }
   }
 }
@@ -548,7 +548,7 @@ layer {
     stride: 1
     weight_filler {
       type: "gaussian"
-      std: 1
+      std: 0.1
     }
   }
 }
@@ -693,7 +693,7 @@ layer {
     stride: 1
     weight_filler {
       type: "gaussian"
-      std: 1
+      std: 0.1
     }
   }
 }
